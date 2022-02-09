@@ -27,14 +27,7 @@ for n in range(10):
     # print(end - start,start,end)
 
 # Print Chain
-Temp_head = chain.head.next
-i=0
-while Temp_head != None:
-    # print(blockchain.head.previous_hash)
-    print(Temp_head)
-    print (time_lst[i])
-    i+=1
-    Temp_head = Temp_head.next
+chain.print_chain()
 print(time_lst)
-print ('AVG Time Taken: ', sum(time_lst) / float(len(time_lst)))
-# print(chain.head)
+print ('AVG Time Taken:', sum(time_lst) / float(len(time_lst)))
+print("Chain Length:",chain.chain_len())
